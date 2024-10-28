@@ -6,7 +6,7 @@ import Navbar from './components/main/NavBar';
 import ScrollToTop from './components/ScrollToTop'; 
 // import Home from './components/Home'; 
 import Products from './components/products/Products.jsx';
-import ProductDetails from './components/products/productDetails'; 
+import ProductDetails from './components/products/ProductDetails.jsx'; 
 import SearchResult from './components/products/SearchResult'
 import Blogs from './components/Blogs'; 
 import Contact from './components/Contact'; 
