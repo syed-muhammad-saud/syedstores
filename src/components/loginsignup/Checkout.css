@@ -1,0 +1,51 @@
+.checkout-container {
+    background-color: #f8f9fa; 
+    margin-top: 120px;
+  
+  .checkout-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .shipping-info-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .order-summary-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+  }
+  
+  .order-summary-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+  }
+  
+  .order-summary-image {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 0.25rem; /* Rounded corners */
+  }
+  
+  .order-summary-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .total-amount {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+
+  .saud{
+    font-weight: 500px;
+    color: antiquewhite ;
+  }
+
+  .orderr-summary{
+    color: black;
+  }
+}

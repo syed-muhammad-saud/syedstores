@@ -1,0 +1,40 @@
+
+
+.products {
+  transition: transform 0.3s ease-in-out;
+}
+
+.products:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.card {
+  height: 300px; /* Set a consistent height for each card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+.card-img-top {
+  height: 150px; /* Set a fixed height for the image */
+  object-fit: cover; /* Cover the image area while maintaining aspect ratio */
+}
+
+.card-body {
+  padding: 10px; /* Adjust padding for a better layout */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Set a readable font size */
+  font-weight: bold; /* Ensure titles are bold */
+}
+
+.card-text {
+  color: #555555da; /* Subtle color for the text */
+}
+
+.card-link {
+  text-decoration: none; /* Remove default link styling */
+  color: inherit; /* Ensure text color inherits from parent */
+}
+

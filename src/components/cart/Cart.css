@@ -1,0 +1,35 @@
+.cart {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    padding-top: 80px; /* Add padding-top to prevent overlap */
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+
+  .empcart{
+    height: 482px;
+    padding-top: 250px;
+    
+  }
+
+  /* .quantity-badge {
+    background-color: #f0f0f5;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .btn {
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  
+   */
