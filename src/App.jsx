@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/main/NavBar';
 import ScrollToTop from './components/ScrollToTop'; 
 // import Home from './components/Home'; 
-import Products from './components/products/Products';
+import Products from './components/products/Products.jsx';
 import ProductDetails from './components/products/productDetails'; 
 import SearchResult from './components/products/SearchResult'
 import Blogs from './components/Blogs'; 
