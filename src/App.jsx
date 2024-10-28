@@ -11,9 +11,9 @@ import Blogs from './components/Blogs.jsx';
 import Contact from './components/Contact.jsx';
 import NotFound from './components/notFound/NotFound.jsx';
 import Footer from './components/main/Footer.jsx';
-import Carts from './components/cart/Cart.jsx'; 
 import Checkout from './components/loginsignup/Checkout.jsx';
 import Auth from './components/loginsignup/Auth.jsx';
+import Cart from '../src/components/cart/Cart.jsx'; 
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         <Route path="/search" element={<SearchResult />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Carts />} />
+        <Route path="/cart" element={<Cart />} /> 
         <Route path="/auth" element={<Auth />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<NotFound />} />

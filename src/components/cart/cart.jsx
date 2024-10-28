@@ -4,7 +4,7 @@ import { removeFromCart, clearCart, addToCart } from '../../redux/reducers/cartR
 import { useNavigate } from 'react-router-dom';
 import './cart.css';
 
-const Carts = () => {
+const cart = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const cartItems = useSelector((state) => state.cart.items);
@@ -76,4 +76,4 @@ const Carts = () => {
   );
 };
 
-export default Carts;
+export default cart;
