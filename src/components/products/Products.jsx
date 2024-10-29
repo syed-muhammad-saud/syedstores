@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './Products.css';
 import { Link } from 'react-router-dom';
-import Loader from '../loader/Loader';
+// import Loader from '../loader/Loader';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -77,7 +77,10 @@ const Products = () => {
   };
 
   if (loading) {
-    return <Loader />;
+    // return <Loader />;
+    return <>
+      <p>Loading Please Wait</p>
+    </>
   }
 
   const categories = ['all', ...new Set(products.map((p) => p.category))];
