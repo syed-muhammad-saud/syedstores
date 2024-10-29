@@ -6,7 +6,7 @@ import Navbar from './components/main/NavBar';
 import ScrollToTop from './components/ScrollToTop'; 
 // import Home from './components/Home'; 
 import Products from './components/products/Products.jsx';
-import ProductDetails from './components/products/ProductDetails.jsx'; 
+import ProductsDetail from './components/products/ProductsDetail.jsx'; 
 import SearchResult from './components/products/SearchResult'
 import Blogs from './components/Blogs'; 
 import Contact from './components/Contact'; 
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/products/:id" element={<ProductsDetail />} />
         <Route path="/search" element={<SearchResult />} /> 
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
