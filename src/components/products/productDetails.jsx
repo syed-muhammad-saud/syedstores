@@ -3,10 +3,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { addToCart, removeFromCart } from "../../redux/reducers/cartReducer";
-import "./ProductDetails.css";
+import "./ProductsDetail.css";
 import Loader from "../loader/loader";
 
-const ProductDetails = () => {
+const ProductsDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -170,4 +170,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default ProductsDetail;
