@@ -1,6 +1,6 @@
 // src/components/Loader.js
 import React from 'react';
-import './Loader.css'; 
+import '../loginsignup/Loader.css'; 
 
 const Loader = () => {
   return (
