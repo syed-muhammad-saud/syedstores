@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { addToCart, removeFromCart } from "../../redux/reducers/cartReducer";
 import './ProductsDetail.css'
-import Loader from "../loader/loader";
+import Loader from "../loader/Loader";
 
 const ProductDetails = () => {
   const { id } = useParams();

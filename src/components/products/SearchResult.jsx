@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useLocation, Link } from 'react-router-dom';
-import Loader from '../loader/loader';
+import Loader from '../loader/Loader';
 import './SearchResult.css'
 
 const SearchResult = () => {
