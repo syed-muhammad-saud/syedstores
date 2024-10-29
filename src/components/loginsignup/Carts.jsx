@@ -2,9 +2,9 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart, clearCart, addToCart } from '../../redux/reducers/cartReducer';
 import { useNavigate } from 'react-router-dom';
-import './Cart.css';
+import './Carts.css';
 
-const Cart = () => {
+const Carts = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const cartItems = useSelector((state) => state.cart.items);
@@ -76,4 +76,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Carts;

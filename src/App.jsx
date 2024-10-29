@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 // import Signup from './components/loginsignup/signup';
 import NotFound  from './components/notFound/NotFound';
 import Footer from './components/main/Footer';
-import Cart from './components/loginsignup/Cart.jsx';
+import Carts from './components/loginsignup/Carts.jsx';
 import Checkout from './components/loginsignup/Checkout';
 import Auth from './components/loginsignup/Auth';
 
@@ -30,7 +30,7 @@ function App() {
         <Route path="/search" element={<SearchResult />} /> 
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<Carts />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<NotFound />} />
