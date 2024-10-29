@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 // import Signup from './components/loginsignup/signup';
 import NotFound  from './components/notFound/NotFound';
 import Footer from './components/main/Footer';
-import Cart from './components/loginsignup/cart.jsx';
+import Cart from './components/loginsignup/Cart.jsx';
 import Checkout from './components/loginsignup/Checkout';
 import Auth from './components/loginsignup/Auth';
 
