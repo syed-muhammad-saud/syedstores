@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { addToCart, removeFromCart } from "../../redux/reducers/cartReducer";
-import './ProductDetails.css'
+import './ProductsDetail.css'
 import Loader from "../loader/loader";
 
 const ProductDetails = () => {
