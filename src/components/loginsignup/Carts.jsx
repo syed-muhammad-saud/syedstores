@@ -8,6 +8,14 @@ const Carts = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const cartItems = useSelector((state) => state.cart.items);
+  const user = useSelector((state) => state.auth.user); // Get user state from Redux
+
+  // Redirect to login if user is not authenticated
+  React.useEffect(() => {
+    if (!user) {
+      navigate('/auth'); // Redirect to the auth page if user is not logged in
+    }
+  }, [user, navigate]);
 
   const handleRemoveFromCart = (id) => {
     dispatch(removeFromCart(id));

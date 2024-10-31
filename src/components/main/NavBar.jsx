@@ -1,16 +1,38 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useSelector } from 'react-redux';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { login, logout } from "../../redux/slice/authSlice"; 
 import './Navbar.css';
 import cart from '../../assets/Cart.png';
 import AuthImg from '../../assets/AuthImg.png';
 
 const NavBar = () => {
-  // Get the cart items from Redux
   const cartItems = useSelector((state) => state.cart.items);
+  const isAuthenticated = useSelector((state) => state.auth.user);
+  const dispatch = useDispatch();
 
-  // Count unique items in the cart
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
   const uniqueItemsCount = cartItems.length;
+  const location = useLocation();
+  const isDashboard = location.pathname === "/dashboard"; 
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setErrorMessage('');
+    dispatch(login({ username, password }))
+      .unwrap()
+      .then(() => {})
+      .catch((error) => {
+        setErrorMessage(error);
+      });
+  };
+
+  const handleLogout = () => {
+    dispatch(logout()); // Log out without removing user data
+  };
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
@@ -37,11 +59,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              
-            </li>
-            <li className="nav-item">
               <Link className="nav-links" to="/blogs">
-                About us
+                About Us
               </Link>
             </li>
             <li className="nav-item">
@@ -58,9 +77,24 @@ const NavBar = () => {
               </span>
             )}
           </Link>
-          <Link to="/auth">
-          <img src={AuthImg} alt="Login" style={{height: "70px", color:"pink"}} />
-          </Link>
+
+          {isAuthenticated ? (
+            <div className="d-flex align-items-center">
+              <Link to="/dashboard">
+                <img src={AuthImg} alt="Dashboard" style={{ height: "70px", color: "pink" }} />
+              </Link>
+              <Link to="/auth">
+              <button className="btn btn-danger" onClick={handleLogout}>Logout</button>
+              </Link> 
+            </div>
+          ) : (
+            <div>
+              <Link to="/auth">
+                <button type="submit" className="btn btn-logsign">Login/Signup</button>
+              </Link>
+              {errorMessage && <p className="text-danger">{errorMessage}</p>} 
+            </div>
+          )}
         </div>
       </div>
     </nav>
