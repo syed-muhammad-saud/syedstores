@@ -14,7 +14,7 @@ import Footer from './components/main/Footer';
 import Carts from './components/loginsignup/Carts.jsx';
 import Checkout from './components/loginsignup/Checkout';
 import Auth from './components/loginsignup/Auth'; 
-import DashBoard from './components/main/Dashboard.jsx';
+import DashBoard from './components/main/DashBoard.jsx';
 
 function App() {
   return (
